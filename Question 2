@@ -1,0 +1,11 @@
+Here is my SQL Code and Outputs for Question 2:
+
+a) How many orders were shipped by Speedy Express in total?
+
+```
+SELECT COUNT(*) AS OrdersShipped
+FROM Orders JOIN Shippers
+ON Orders.ShipperID == Shippers.ShipperID
+WHERE Shippers.ShipperName == "Speedy Express";
+```
+
